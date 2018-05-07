@@ -1,0 +1,42 @@
+BSP 1:
+
+a) 262 144 000KB -> 262 144 000 Blocks
+
+b) 262 144 000
+
+c) LOG2(262 144 000) = 28BIT
+
+d) (28*262144000)/8=917504000KB
+
+BSP 2:
+
+a)
+
+b)
+  Calculate /1024 for your position
+  107 834 590 / 1024 = 105 307 Blocks
+  107834590%1024=222
+  Skip 105 307 blocks and now skip 222 Bytes to the exact position.
+
+3)
+
+  32 bit are 4 byte
+  1024 addresses for 4kB (4096/4) 256 addresses for 1kB (1024/4)
+  Double indirect
+  1024^2*4 = 4194304kB= 4GB 256^2 = 65536kB =64MB 512B -> 128 entries
+  1024B -> 256 entries
+
+4)
+
+a)
+  Take 1024Byte Blocks
+  107834590-256=107834334
+  107 834 334 - 256^2 = 107 768 798
+  107 768 798 – 256^3 = 90 991 582
+  90 991 582 -256^4=
+
+b)
+
+  128^3*512 = 1 073 741 824 B = 1 048 576 KB = 1024 MB = 1 GB
+
+  256^3x1024 = 1 717 986 918 B = 16 777 216 KB = 16 384 MB = 16 GB
